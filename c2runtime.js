@@ -18756,8 +18756,8 @@ cr.behaviors.wrap = function(runtime)
 	};
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Mouse,
 	cr.plugins_.Keyboard,
+	cr.plugins_.Mouse,
 	cr.plugins_.Text,
 	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
@@ -18784,6 +18784,9 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.OnCollision,
 	cr.plugins_.Sprite.prototype.acts.SubInstanceVar,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
+	cr.system_object.prototype.acts.AddVar,
+	cr.plugins_.Text.prototype.acts.SetText,
+	cr.system_object.prototype.cnds.Compare,
 	cr.plugins_.TiledBg.prototype.acts.SetWidth,
 	cr.system_object.prototype.cnds.Every,
 	cr.system_object.prototype.acts.CreateObject,
@@ -18793,6 +18796,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SetGroupActive,
 	cr.system_object.prototype.acts.SetVar,
 	cr.plugins_.Mouse.prototype.cnds.IsButtonDown,
-	cr.behaviors.Bullet.prototype.acts.SetSpeed
+	cr.behaviors.Bullet.prototype.acts.SetSpeed,
+	cr.plugins_.Sprite.prototype.acts.RotateClockwise
 ];};
 
